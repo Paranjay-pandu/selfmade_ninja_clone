@@ -12,7 +12,6 @@ const Navbar = () => {
         <button className="btn2">Contact</button>
         <button className="btn2">Certification Verification</button>
         <button className="btn2">Sign in</button>
-
       </div>
     </div>
   )
