@@ -9,6 +9,7 @@ body, html {
   width: 100vw;
   background: #000;
   color: white;
+  overflow-x: hidden;
 }
 .nav-bar{
   background-color: #1E1E1E;
@@ -17,7 +18,8 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 10px 10px black;
+  border-bottom: 2px solid #000;
+  z-index: 10;
 }
 .nav-bar #left  {
   display: flex;
@@ -25,39 +27,146 @@ body, html {
   gap: 1.5vw;
   padding-left: 9vw;
 }
-
 .nav-bar #left img{
-  height: 7.9vh;
-  width: 9.8vw;
+  height: 7.7vh;
+  width: 9.5vw;
   object-position: center;
   object-fit: fill;
 }
-
 .nav-bar #left .btn1 {
   height: 2.65vw;
   width: 10vw;
   border-radius: 30px;
   background-color: #F47923;
   border: none;
-  font-size: 17px;
+  font-size: 0.9em;
   font-weight: 600;
   color: white;
   font-family: sans-serif;
   padding: auto auto;
 }
-
 .nav-bar #right{
   padding-right: 10.8vw;
   display: flex;
-  gap: 3vw;
+  gap: 2.5vw;
+  margin-right: 5px;
 }
-
 .nav-bar #right .btn2 {
   border: none;
   background-color: transparent;
   color: gray;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 500;
-  letter-spacing: 0px;
-  /* font-family: ; */
+  letter-spacing: -0.5px;
+}
+#right #sign{
+  color: #F47923;
+}
+#hero {
+  height: 90vh;
+  width: 100vw;
+  /* background: linear-gradient(to left, #f47a23bb, rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.578), #f47a23a0); */
+  background-image: url(https://selfmade.ninja/assets/hero-backgrounds/bg-frame.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+#cover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(26, 25, 25, 0.779);
+  z-index: 0;
+}
+#filler1{
+  background-color: #f47a23b4;
+  position: absolute;
+  height: 60vh;
+  width: 20vw;
+  top: 20%;
+  left: -10%;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+#filler2{
+  background-color: #f47a238b;
+  position: absolute;
+  height: 60vh;
+  width: 20vw;
+  top: 20%;
+  right: -10%;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+#hero_img{
+  height: 64%;
+  transform: scaleX(-1) translateX(50%);
+  z-index: 2;
+  position: absolute;
+  bottom: -43px;
+  left: 50%;
+}
+#hero_title{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+#hero_title h1{
+  font-size: 2.3em;
+  line-height: 1.8em;
+  z-index: 2;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#hero_title h1 span{
+  color: #F47923;
+}
+#hero_title button{
+  border: 1px solid #F47923;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px 60px;
+  margin-top: 47px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  z-index: 3;
+  transition: all ease 500ms;
+}
+#hero_title button:hover{
+  background-color: #F47923;
+}
+img#sub1{
+  height: 115px;
+  z-index: 3;
+  position: absolute;
+  top: 26%;
+  left: 29%;
+}
+img#sub2{
+  height: 140px;
+  z-index: 3;
+  position: absolute;
+  top: 29%;
+  right: 27%;
+}
+img#sub3{
+  height: 100px;
+  z-index: 3;
+  position: absolute;
+  top: 76%;
+  left: 25%;
+}
+img#sub4{
+  height: 110px;
+  z-index: 3;
+  position: absolute;
+  top: 78%;
+  right: 31%;
 }

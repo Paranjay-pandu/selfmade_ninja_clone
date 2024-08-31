@@ -11,7 +11,7 @@ const Navbar = () => {
         <button className="btn2">About Us</button>
         <button className="btn2">Contact</button>
         <button className="btn2">Certification Verification</button>
-        <button className="btn2">Sign in</button>
+        <button className="btn2" id='sign'>Sign in</button>
       </div>
     </div>
   )
